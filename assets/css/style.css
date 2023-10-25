@@ -1,0 +1,224 @@
+.topnav {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  padding-block: 15px;
+  padding-inline: 10px;
+  border-radius: 45px;
+  justify-content: space-around;
+  background-color: rgb(254, 247, 226);
+  align-items: center;
+}
+
+.topnav button {
+  background-color: rgb(255, 223, 127);
+  color: rgb(116, 35, 5);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  align-items: center;
+  /* transition: 0.3s; */
+  border-radius: 30px;
+  padding-block: 5px;
+}
+
+.topnav button:active {
+  background-color: red;
+}
+
+.topnav button:hover {
+  background-color: #f57575;
+}
+
+header img {
+  width: 45px;
+  padding-inline: 10px;
+}
+h1 {
+  font-size: 2.5em;
+  color: rgb(116, 35, 5);
+  font-weight: bold;
+}
+
+.productContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.product {
+  max-width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(254, 247, 226);
+  border-radius: 30%;
+  border: 1px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product button {
+  width: 45%;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  border: 0;
+  color: rgb(116, 35, 5);
+  background-color: rgb(255, 223, 127);
+  cursor: pointer;
+}
+
+.price {
+  flex-grow: 1;
+  text-align: center;
+}
+.titleHoney {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.titleHoney h2 {
+  margin-bottom: 0px;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+.articolo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px;
+  border-radius: 25px;
+  background-color: rgb(254, 247, 226);
+}
+h2 {
+  color: rgb(116, 35, 5);
+  margin: auto;
+  width: 100%;
+  margin-top: 25px;
+}
+.articolo img {
+  margin-inline: auto;
+  min-width: 94%;
+  margin-bottom: 20px;
+}
+
+.articolo h2 {
+  color: rgb(116, 35, 5);
+  margin: auto;
+  width: 94%;
+  margin-top: 25px;
+}
+.articolo p {
+  margin-inline: auto;
+  max-width: 94%;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    display: flex;
+    height: 100vh;
+  }
+  .topnav {
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-inline: 10px;
+    background-color: rgb(254, 247, 226);
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .topnav button {
+    background-color: rgb(255, 223, 127);
+    color: rgb(116, 35, 5);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 30px;
+    padding-block: 5px;
+    margin-bottom: 70px;
+    padding-inline: 30px;
+    padding-block: 20px;
+    order: 2;
+    height: 65px;
+    width: 150px;
+    font-weight: bold;
+  }
+  main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .productContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .product {
+    max-width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 247, 226);
+    border-radius: 15%;
+    border: 1px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  article {
+    width: 98%;
+  }
+  .others {
+    order: 2;
+  }
+  #one {
+    order: 1;
+  }
+  .articolo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin: 15px;
+    border-radius: 25px;
+    background-color: rgb(254, 247, 226);
+  }
+  .product .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .text {
+    margin-top: 30px;
+  }
+  .articolo img {
+    margin-inline: auto;
+    min-width: 50%;
+    margin: 40px;
+  }
+}
