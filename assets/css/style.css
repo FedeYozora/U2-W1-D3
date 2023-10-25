@@ -16,12 +16,18 @@
   border: none;
   cursor: pointer;
   display: flex;
+  width: 16%;
+  height: 30px;
   /* flex: 1; */
   justify-content: center;
   align-items: center;
   /* transition: 0.3s; */
   border-radius: 30px;
   padding-block: 5px;
+}
+#one {
+  height: 50px;
+  width: 18%;
 }
 
 .topnav button:active {
@@ -196,6 +202,8 @@ h2 {
   }
   #one {
     order: 1;
+    height: 65px;
+    width: 150px;
   }
   .articolo {
     display: flex;
